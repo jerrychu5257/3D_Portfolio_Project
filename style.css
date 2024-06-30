@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100&family=Playfair+Display&display=swap');
+
+* 
+{
+    border: 0px solid black;
+    font-family:  sans-serif;
+}
+
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+.page{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 790px){
+    .footer .logo{
+        display: none;
+    }
+}
+@media screen and (max-width: 640px){
+    .top .logo h2{
+        display: none;
+    }
+    .top .navigation h1{
+        font-size: 16px;
+    }
+}
+
+.top{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 54px;
+    cursor: pointer;
+}
+.logo img{
+    width: 32px;
+    height: 32px;
+}
+.logo h2{
+    font-size: 16px;
+    margin-left: 8px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.navigation{
+    display: flex;
+    margin-right: 16px;
+    position:absolute; 
+    right: 54px;
+}
+.navigation h1{
+    font-size: 20px;
+    margin-left: 32px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+#home{
+    display: flex;
+}
+#contact,#about,#work,#playground{
+    display: none;
+}
+
+.side{
+    width: 25%;
+    height: 100%;
+    background-color: #FCF0E3;
+}
+
+.side h1{
+    margin-left: 54px;
+    margin-top: 110px;
+    font-size: 72px;
+    font-weight: normal;
+    position: absolute;
+}
+.side h2{
+    margin-left: 54px;
+    margin-top: 320px;
+    font-size: 24px;
+    position: absolute;
+    font-weight: normal;
+}
+.side button{
+    position: relative;
+    left: 54px;
+    top: 550px;
+    font-size: 24px;
+    padding: 16px;
+    border-radius: 16px;
+    border: 2px solid black;
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.main{
+    width: 75%;
+    height: 100%;
+    
+}
+.main .webgl{
+    width: 100%;
+    height: 100%;
+    background-color: #aaa;
+}
+
+#about .sectionAboutMe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 800px){
+    #about .sectionAboutMe .founderContainer{
+        flex-direction: column;
+    }
+    #about .sectionAboutMe{
+        width: 100%;
+        height: 150%;
+    }
+    #about .sectionAboutMe .founder{
+        top: 0px !important;
+    }
+}
+#about .sectionAboutMe .founderContainer{
+    display: flex;
+    align-items: center;
+}
+#about .sectionAboutMe .founder{
+    position: relative;
+    top: -50px;
+    margin: 32px;
+}
+#about .sectionAboutMe .founder h3{
+    margin-bottom: 32px;
+}
+#about .sectionAboutMe .founder img{
+    width:300px;
+    border-radius: 16px;
+    
+}
+
+#about .sectionAboutMe .description{
+    margin: 32px;
+}
+#about .sectionAboutMe .description h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+#about .sectionAboutMe .description h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+.frame{
+    margin: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frameH{
+    width: 20px;
+    height: 2px;
+    background-color: black;
+}
+.frameV{
+    width: 2px;
+    height: 60px;
+    background-color: black;
+}
+
+@media screen and (max-width:900px) {
+    .popout{
+        display: none;
+        margin: 32px;
+        position: absolute;
+        right: 200px;
+        top: 250px; 
+    }
+}
+@media screen and (max-width:630px) {
+    #about .sectionAboutQUAD{
+        width: 100%;
+        height: 150% !important;
+    }
+    #about .sectionAboutQUAD .bgImg.blue{
+        left: 120px !important;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    #about .sectionAboutQUAD .bgImg.red{
+        display: none;
+    }
+    #about .sectionAboutQUAD .bgImg.green{
+        display: none;
+    }
+    #about .sectionAboutQUAD .bgImg.yellow{
+        display: none;
+    }
+}
+#about .sectionAboutQUAD{
+    width: 100%;
+    height: 110%;
+    background-color: #A88567;
+    position: relative;
+    overflow: hidden;
+}
+#about .sectionAboutQUAD .bgFont{
+    font-size: 250px;
+    position: absolute;
+    color: white;
+}
+#about .sectionAboutQUAD .bgFont.Q{
+    left: -15px;
+    top: -45px;
+}
+#about .sectionAboutQUAD .bgFont.A{
+    right: -5px;
+    top: -50px;
+}
+#about .sectionAboutQUAD .bgFont.U{
+    left: -20px;
+    bottom: -55px;
+}
+#about .sectionAboutQUAD .bgFont.D{
+    right: -10px;
+    bottom: -60px;
+}
+
+#about .sectionAboutQUAD .bgImg{
+    width:250px;
+    position: absolute;
+}
+#about .sectionAboutQUAD .bgImg.blue{
+    bottom: -10px;
+    left: 150px;
+}
+#about .sectionAboutQUAD .bgImg.red{
+    bottom: -30px;
+    left: 425px;
+}
+#about .sectionAboutQUAD .bgImg.green{
+    bottom: 0px;
+    left: 725px;
+}
+#about .sectionAboutQUAD .bgImg.yellow{
+    bottom: -10px;
+    left: 1000px;
+}
+
+#about .sectionAboutQUAD .main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about .sectionAboutQUAD .main .frame{
+    margin: 32px;
+}
+#about .sectionAboutQUAD .main .frame .frameH{
+    background-color: #fff;
+}
+#about .sectionAboutQUAD .main .frame .frameV{
+    background-color: #fff;
+}
+
+#about .sectionAboutQUAD .main .description{
+    margin: 32px;
+    width: 1025px;
+    color: #fff;
+}
+#about .sectionAboutQUAD .main .description h1{
+    font-size: 64px;
+    margin-bottom: 32px;
+}
+#about .sectionAboutQUAD .main .popout{
+    margin: 32px;
+    position: absolute;
+    right: 200px;
+    top: 250px; 
+}
+
+#work .sectionWork{
+    width: 100%;
+    height: 140%;
+    background-color: #fff;
+    overflow: hidden;
+}
+#work .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#work .buttons .button{
+    height: 30px;
+    width: 64px;
+    margin: 16px;
+    border: 1px solid black;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#work #displayAll{
+    border: 0px solid black;
+    background-color: #A88567;
+    color: white;
+}
+#work .projects{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1070px;
+}
+@media screen and (max-width: 1070px){
+    #work .sectionWork{
+        width: 100%;
+        height: 260%;
+        background-color: #fff;
+        overflow: hidden;
+    }
+    #work .projects{
+        max-width: 500px;
+    }
+}
+
+#work .projects .container{
+    display: inline-block;
+    position: relative;
+    max-width: 500px;
+    margin: 16px;
+    padding: 0px;
+}
+#work .projects .container .overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: thin;
+    font-size: 12px;
+    text-align: center;
+    line-height: 36px;
+    transition: 0.5s;
+    opacity: 0;
+}
+#work .projects .container img{
+    width: 100%;
+    z-index: 1;
+}
+#work .projects .project{
+    display: none;
+}
+#work .projects .project.show{
+    display: inline-block;
+}
+
+
+#playground .playground{
+    width:100%;
+    height: 540px;
+}
+#playground .webglPlay{
+    width: 100%;
+    height: 0px;
+}
+
+#playground .main{
+    position: relative;
+    top: -5px;
+    width: 100%;
+    height: 3550px;
+    background-color: black;
+    overflow: hidden;
+}
+#playground .intro{
+    margin-left: 168px;
+    margin-top: 50px;
+    display: inline-block;
+    color: white;
+}
+#playground .titleThreejs{
+    color: white;
+    margin-left: 168px;
+    margin-top: 160px;
+    margin-bottom: 32px;
+}
+#playground .threejs{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1070px;
+}
+@media screen and (max-width: 1101px) {
+    #playground .main{
+        position: relative;
+        height: 5000px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #playground .main{
+        position: relative;
+        height: 5750px;
+    }
+    #playground .threejs{
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+    }
+    #playground .renders{
+        display: flex;
+        flex-wrap: wrap ;
+    }
+}
+@media screen and (max-width: 881px) {
+    #playground .main{
+        position: relative;
+        height: 6150px;
+    }
+}
+@media screen and (max-width: 661px) {
+    #playground .main{
+        position: relative;
+        height: 6850px;
+    }
+}
+#playground .threejs .webglWave{
+    width: 500px;
+    height: 350px;
+    margin-top: 32px;
+    margin-right: 32px;
+}
+#playground .threejs .webglStar{
+    width: 500px;
+    height: 350px;
+    margin-top: 32px;
+    margin-right: 32px;
+}
+#playground .threejs .webglPortfolio{
+    
+    height: 350px;
+    margin-top: 32px;
+    margin-right: 32px;
+}
+#playground .threejs .webglPortal{
+    
+    height: 350px;
+    margin-top: 32px;
+    margin-right: 32px;
+}
+#playground .titleRenders{
+    color: white;
+    margin-top: 160px;
+    margin-left: 168px;
+    margin-bottom: 32px;
+}
+#playground .renders{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1107px;
+}
+#playground .renders img{
+    width: 220px;
+}
+#playground .renders img.big{
+    width: 550px;
+}
+
+@media screen and (max-width: 700px) {
+    #contact .sectionContact{
+        width: 100%;
+        height: 120% !important;
+    }
+    #contact .sectionContact .contactContainer{
+        flex-direction: column !important;
+    }
+    #contact .sectionContact .description h1{
+        font-size: 36px !important;
+        top: 0px !important;
+    }
+    #contact .sectionContact .description .email{
+        margin-top:32px;
+        top: 0px !important;
+    }
+    #contact .sectionContact .description .follow{
+        margin-top:32px;
+    }
+    #contact .sectionContact .description .follow h4{
+        top: 0px !important;
+    }
+    #contact .sectionContact .description .follow img{
+        margin-top: 16px;
+        top: 0px !important;
+    }
+}
+#contact .sectionContact{
+    background-color: #A88567;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#contact .sectionContact .frameH{
+    background-color: #fff;
+}
+#contact .sectionContact .frameV{
+    background-color: #fff;
+}
+#contact .sectionContact .contactContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+#contact .sectionContact .model{
+    width: 450px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 300px;
+    margin: 32px;
+}
+#contact .sectionContact .model .webglContact{
+    border-radius: 300px;
+    width: 100%;
+    height: 100%;
+}
+#contact .sectionContact .description{
+    position: relative;
+    margin: 32px;
+    color: white;
+}
+#contact .sectionContact .description h1{
+    font-size: 64px;
+    position: relative;
+    top: -100px;
+}
+#contact .sectionContact .description .email{
+    font-weight: normal;
+    font-size: 16px;
+    position: relative;
+    top: -40px;
+}
+#contact .sectionContact .description .email span{
+    font-weight: bold;
+}
+#contact .sectionContact .description .follow{
+    font-size: 16px;
+    position: relative;
+    top: 0px;
+}
+#contact .sectionContact .description .follow h4{
+    position: relative;
+    top: 60px;
+}
+#contact .sectionContact .description .follow img{
+    width: 32px;
+    margin-right: 8px;
+    position: relative;
+    top: 80px;
+    cursor: pointer;
+}
+
+.footer{
+    width: 100%;
+    height: 40%;
+    background-color: #32291F;
+    position: relative;
+    top: -16px;
+    border-radius: 16px 16px 0px 0px;
+    overflow: hidden;
+}
+.footer .logo{
+    color: white;
+    position: absolute;
+    top: 50px;
+}
+.footer .listContainer{
+    position: relative;
+    top: 50px;
+    width: 400px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer .navigationList{
+    color: white;
+    position:absolute;
+}
+.footer .contactList{
+    color: white;
+    position:absolute;
+    margin-left: 200px;
+}
+.footer .contactList .list{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+.footer .contactList .list p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 8px;
+}
+.footer .contactList .list img{
+    width: 16px;
+    margin: 0px;
+}
+
+.footerHome, .footerAbout, .footerWork, .footerPlayground, .footerContact{
+    cursor: pointer;
+}

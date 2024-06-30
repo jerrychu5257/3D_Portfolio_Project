@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerry's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="top">
+        <div id="logo" class="logo">
+            <img src="./src/image/styleframe/logo_black.png" alt="">
+            <h2>夸果設計<br>QUAD Design</h2>
+        </div>
+        <div class="navigation">
+            <h1 id="navAbout">About</h1>
+            <h1 id="navWork">Work</h1>
+            <h1 id="navPlayground">Playground</h1>
+            <h1 id="navContact">Contact</h1>
+        </div>
+    </div>
+    <div id="home" class="page">
+        <div class="side">
+            <h1>Hello,<br>I am Jerry</h1>
+            <h2>我喜歡創造有趣且<br>回味無窮的互動體驗<br><br>I like to create fun <br>
+                and interactive<br> experiences.</h2>
+            <button id="myprojects">My Projects</button>
+        </div>
+        <div class="main">
+            <canvas class="webglScene"></canvas>
+        </div>
+    </div>
+    <div id="about" class="page">
+        <div class="sectionAboutMe">
+            <div class="frame">
+                <div class="frameH"></div>
+                <div class="frameV"></div>
+            </div>
+            <div class="founderContainer">
+                <div class="founder">
+                    <h3>Founder<br>創辦人</h3>
+                    <img src="./src/image/photo/photo_cut.png" alt="">
+                </div>
+                <div class="description">
+                    <h1> Chien-Yuan Chu 朱健源</h1>
+                    <h3>Motion / Visual / 3D / Interaction Designer</h3>
+                    <p>出身於台北市，就讀雪梨科技大學互動設計所。<br>作品橫跨3D、視覺、動態，以及互動設計。熱愛<br>創造有美感且有趣的互動體驗，不被設計媒介所限制。<br>現為夸果設計創辦人。<br><br>
+                        Born in Taipei, study master of Interaction Design <br>in UTS, Sydney. I love to create fun and beautiful <br>experiences. Founder of QUAD Design.</p>
+                </div>
+            </div>
+            <div class="frame">
+                <div class="frameV"></div>
+                <div class="frameH"></div>
+            </div>
+        </div>
+        <div class="sectionAboutQUAD">
+            <h1 class="bgFont Q">Q</h1>
+            <h1 class="bgFont A">A</h1>
+            <h1 class="bgFont U">U</h1>
+            <h1 class="bgFont D">D</h1>
+            <img id="hoverBlue" class="bgImg blue" src="./src/image/styleframe/blue.png" alt="">
+            <img id="hoverRed" class="bgImg red" src="./src/image/styleframe/red.png" alt="">
+            <img id="hoverGreen" class="bgImg green" src="./src/image/styleframe/green.png" alt="">
+            <img id="hoverYellow" class="bgImg yellow" src="./src/image/styleframe/yellow.png" alt="">
+            <div class="main">
+                <div class="frame">
+                    <div class="frameH"></div>
+                    <div class="frameV"></div>
+                </div>
+                <div class="description">
+                    <h1> About QUAD</h1>
+                    <p>
+                        夸果設計代表了跨域創作的一種精神，背景橫跨了工程、3D動畫、演唱會、光雕展演與沈浸式視覺設計，以及互動體驗設計等等。夸果由四個虛擬角色組合在一起，依次為“理性”、“熱情”、“實驗精神”、“好奇心”，專注於設計讓人回味無窮的視覺互動體驗。<br><br>
+                        QUAD represents a spirit of cross-disciplinary creation, with backgrounds spanning engineering, 3D animation, concerts, projection mapping performances, immersive visual design, and interactive experience design, etc. QUAD is composed of four virtual characters, namely "rationality", "passion", "experimental spirit" and "curiosity". 
+                        It focuses on designing an unforgettable visual interactive experience.
+                    </p>
+                </div>
+                <div class="popout">
+                    <h1 id="hoverText">Passion</h1>
+                </div>
+                <div class="frame">
+                    <div class="frameV"></div>
+                    <div class="frameH"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="logo">
+                <img src="./src/image/styleframe/logo_white.png" alt="">
+                <h2>夸果設計<br>QUAD Design</h2>
+            </div>
+            <div class="listContainer">
+                <div class="navigationList">
+                    <h2>Navigation</h2>
+                    <p class="footerHome">Home</p>
+                    <p class="footerAbout">About</p>
+                    <p class="footerWork">Work</p>
+                    <p class="footerPlayground">Playground</p>
+                    <p class="footerContact">Contact</p>
+                </div>
+                <div class="contactList">
+                    <h2>Contact</h2>
+                    <div class="list">
+                        <img src="./src/image/icon/Email.png" alt="">
+                        <p>summer8341000@gmail.com</p>
+                    </div>
+                    <div class="list">
+                        <img src="./src/image/icon/linkedin-icon_white.png" alt="">    
+                        <p>Linkedin</p>
+                    </div>
+                    <div class="list">
+                        <img src="./src/image/icon/free-behance-icon_white.png" alt="">
+                        <p>Behance</p>
+                    </div>
+                    <div class="list">
+                        <img src="./src/image/icon/ig_icon_white.png" alt="">
+                        <p>Instagram</p>
+                    </div>
+                    <div class="list">
+                        <img src="./src/image/icon/github-icon_white.png" alt="">    
+                        <p>Github</p>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="work" class="page">
+        <div class="sectionWork">
+            <div class="buttons">
+                <div id="displayAll" class="button">All</div>
+                <div id="display3D" class="button">3D</div>
+                <div id="displayMG" class="button">MG</div>
+                <div id="displayUIUX" class="button">UIUX</div>
+                <div id="displayIxD" class="button">IxD</div>
+                <div id="displayElse" class="button">Else</div>
+            </div>
+            <div class="projects">
+                <div class="container project All 3D IxD show">
+                    <div class="overlay">
+                        <h1>Immersive 3D Curation <br>Side Project</h1>
+                    </div>
+                    <img src="./src/image/styleframe/project_curation.png" alt="">
+                </div>
+                <div class="container project All UIUX show">
+                    <div class="overlay">
+                        <h1>"The Decent Briefcase" <br> Culture Probe Research</h1>
+                    </div>
+                    <img src="./src/image/styleframe/project_UXresearch.png" alt="">    
+                </div>
+                <div class="container project All Else show">
+                    <div class="overlay">
+                        <h1>"The QUAD Squad" <br> 3D Charactor Design</h1>
+                    </div>
+                    <img src="./src/image/styleframe/project_charactor.png" alt="">
+                </div>
+                <div class="container project All MG 3D IxD show">
+                    <div class="overlay">
+                        <h1>RE:Taitung 2022 AR Calendar <br> AR & Motion Design</h1>
+                    </div>
+                    <img src="./src/image/styleframe/project_taisungAR.png" alt="">    
+                </div>
+                <div class="container project All MG 3D show">
+                    <div class="overlay">
+                        <h1>Kaohsiung Century Concert<br>Television Visual Package</h1>
+                    </div>
+                    <img src="./src/image/styleframe/project_kaosioung.png" alt="">
+                </div>
+                <div class="container project All MG 3D show">
+                    <div class="overlay">
+                        <h1>Personality <br> 3D Motion Design</h1>
+                    </div>
+                    <img src="./src/image/styleframe/project_3dMotion.png" alt="">    
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="logo">
+                <img src="./src/image/styleframe/logo_white.png" alt="">
+                <h2>夸果設計<br>QUAD Design</h2>
+            </div>
+            <div class="listContainer">
+                <div class="navigationList">
+                    <h2>Navigation</h2>
+                    <p class="footerHome">Home</p>
+                    <p class="footerAbout">About</p>
+                    <p class="footerWork">Work</p>
+                    <p class="footerPlayground">Playground</p>
+                    <p class="footerContact">Contact</p>
+                </div>
+                <div class="contactList">
+                    <h2>Contact</h2>
+                    <div class="list">
+                        <img src="./src/image/icon/Email.png" alt="">
+                        <p>summer8341000@gmail.com</p>
+                    </div>
+                    <div class="list">
+                        <img src="./src/image/icon/linkedin-icon_white.png" alt="">    
+                        <p>Linkedin</p>
+                    </div>
+                    <div class="list">
+                        <img src="./src/image/icon/free-behance-icon_white.png" alt="">
+                        <p>Behance</p>
+                    </div>
+                    <div class="list">
+                        <img src="./src/image/icon/ig_icon_white.png" alt="">
+                        <p>Instagram</p>
+                    </div>
+                    <div class="list">
+                        <img src="./src/image/icon/github-icon_white.png" alt="">    
+                        <p>Github</p>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="playground" class="page">
+        <!-- <img class="playground" src="./src/image/styleframe/Playground.png" alt=""> -->
+        <canvas class="webglPlay"></canvas>
+        <div class="main">
+            <div class="intro">
+                <h1>Playground 遊樂場</h1>
+                <h4>一個自在創作的小空間。A place where I having fun creating.</h4>    
+            </div>
+            <h2 class="titleThreejs">Three.js 三維互動作品</h2>
+            <div class="threejs">
+                <img class="webglWave" src="./src/image/styleframe/threejs_01.png" alt="">
+                <img class="webglStar" src="./src/image/styleframe/threejs_02.png" alt="">
+                <img class="webglPortfolio" src="./src/image/styleframe/threejs_03.png" alt="">
+                <img class="webglPortal" src="./src/image/styleframe/threejs_04.png" alt="">
+            </div>
+            <h2 class="titleRenders">Renders 渲染作品</h2>
+            <div class="renders">
+                <img class="small" src="./src/image/renders/01.png" alt="">
+                <img class="small" src="./src/image/renders/02.png" alt="">
+                <img class="small" src="./src/image/renders/03.png" alt="">
+                <img class="small" src="./src/image/renders/04.png" alt="">
+                <img class="small" src="./src/image/renders/05.png" alt="">
+                <img class="small" src="./src/image/renders/06.png" alt="">
+                <img class="small" src="./src/image/renders/07.png" alt="">
+                <img class="small" src="./src/image/renders/08.png" alt="">
+                <img class="small" src="./src/image/renders/09.png" alt="">
+                <img class="small" src="./src/image/renders/10.png" alt="">
+                <img class="small" src="./src/image/renders/11.png" alt="">
+                <img class="small" src="./src/image/renders/12.png" alt="">
+                <img class="small" src="./src/image/renders/13.png" alt="">
+                <img class="small" src="./src/image/renders/14.png" alt="">
+                <img class="small" src="./src/image/renders/15.png" alt="">
+                <img class="small" src="./src/image/renders/16.png" alt="">
+                <img class="small" src="./src/image/renders/17.png" alt="">
+                <img class="small" src="./src/image/renders/18.png" alt="">
+                <img class="small" src="./src/image/renders/19.png" alt="">
+                <img class="small" src="./src/image/renders/20.png" alt="">
+                <img class="big" src="./src/image/renders/21.png" alt="">
+                <img class="big" src="./src/image/renders/22.png" alt="">
+                <img class="big" src="./src/image/renders/23.png" alt="">
+                <img class="big" src="./src/image/renders/24.png" alt="">
+                <img class="big" src="./src/image/renders/25.png" alt="">
+                <img class="big" src="./src/image/renders/26.png" alt="">
+                <img class="big" src="./src/image/renders/27.png" alt="">
+                <img class="big" src="./src/image/renders/28.png" alt="">
+            </div>
+        </div>
+        <div class="footer">
+            <div class="logo">
+                <img src="./src/image/styleframe/logo_white.png" alt="">
+                <h2>夸果設計<br>QUAD Design</h2>
+            </div>
+            <div class="listContainer">
+                <div class="navigationList">
+                    <h2>Navigation</h2>
+                    <p class="footerHome">Home</p>
+                    <p class="footerAbout">About</p>
+                    <p class="footerWork">Work</p>
+                    <p class="footerPlayground">Playground</p>
+                    <p class="footerContact">Contact</p>
+                </div>
+                <div class="contactList">
+                    <h2>Contact</h2>
+                    <div class="list">
+                        <img src="./src/image/icon/Email.png" alt="">
+                        <p>summer8341000@gmail.com</p>
+                    </div>
+                    <div class="list">
+                        <img src="./src/image/icon/linkedin-icon_white.png" alt="">    
+                        <p>Linkedin</p>
+                    </div>
+                    <div class="list">
+                        <img src="./src/image/icon/free-behance-icon_white.png" alt="">
+                        <p>Behance</p>
+                    </div>
+                    <div class="list">
+                        <img src="./src/image/icon/ig_icon_white.png" alt="">
+                        <p>Instagram</p>
+                    </div>
+                    <div class="list">
+                        <img src="./src/image/icon/github-icon_white.png" alt="">    
+                        <p>Github</p>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="page">
+        <div class="sectionContact">
+            <div class="frame">
+                <div class="frameH"></div>
+                <div class="frameV"></div>
+            </div>
+            <div class="contactContainer">
+                <div class="model">
+                    <canvas class="webglContact"></canvas>
+                </div>
+                <div class="description">
+                    <h1>Let's make<br>something fun!</h1>
+                    <h4 class="email">Email: <span>summer8341000@gmail.com</span></h4>
+                    <div class="follow">
+                        <h4>Follow my social media</h4>
+                        <img src="./src/image/icon/linkedin-icon_white.png" alt="">
+                        <img src="./src/image/icon/free-behance-icon_white.png" alt="">
+                        <img src="./src/image/icon/ig_icon_white.png" alt="">
+                        <img src="./src/image/icon/github-icon_white.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="frame">
+                <div class="frameV"></div>
+                <div class="frameH"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="logo">
+                <img src="./src/image/styleframe/logo_white.png" alt="">
+                <h2>夸果設計<br>QUAD Design</h2>
+            </div>
+            <div class="listContainer">
+                <div class="navigationList">
+                    <h2>Navigation</h2>
+                    <p class="footerHome">Home</p>
+                    <p class="footerAbout">About</p>
+                    <p class="footerWork">Work</p>
+                    <p class="footerPlayground">Playground</p>
+                    <p class="footerContact">Contact</p>
+                </div>
+                <div class="contactList">
+                    <h2>Contact</h2>
+                    <div class="list">
+                        <img src="./src/image/icon/Email.png" alt="">
+                        <p>summer8341000@gmail.com</p>
+                    </div>
+                    <div class="list">
+                        <img src="./src/image/icon/linkedin-icon_white.png" alt="">    
+                        <p>Linkedin</p>
+                    </div>
+                    <div class="list">
+                        <img src="./src/image/icon/free-behance-icon_white.png" alt="">
+                        <p>Behance</p>
+                    </div>
+                    <div class="list">
+                        <img src="./src/image/icon/ig_icon_white.png" alt="">
+                        <p>Instagram</p>
+                    </div>
+                    <div class="list">
+                        <img src="./src/image/icon/github-icon_white.png" alt="">    
+                        <p>Github</p>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
